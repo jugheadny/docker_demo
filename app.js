@@ -7,7 +7,8 @@ var app = express();
 var hostname = os.hostname();
 
 app.get('/', function (req, res) {
-	res.send('<html><body>Hello from Node.js container '+ hostname +'</body></html>');
+	res.status(500)
+	// res.send('<html><body>Hello from Node.js container '+ hostname +'</body></html>');
 });
 
 app.listen(8080);
